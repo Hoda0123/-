@@ -12,6 +12,12 @@ client.on('message', message => {
 });
 
 
+client.on('message', msg => {
+  if (msg.content === 'شكرا') {
+    msg.reply('**``آإلعفو قـ♥̨̥̬لبـ♥̨̥̬ي``**');
+  }
+});
+
 
 
 client.on('message', msg => {
@@ -22,13 +28,13 @@ client.on('message', msg => {
 
 client.on('message', msg => {
   if (msg.content === 'رابط') {
-    msg.reply('** ``https://discord.gg/2UJV6Hp``**');
+    msg.reply('** ``https://discord.gg/pm6Tk8z``**');
   }
 });
 
 client.on('message', msg => {
   if (msg.content === 'الرابط') {
-    msg.reply('** ``https://discord.gg/2UJV6Hp``**');
+    msg.reply('** ``https://discord.gg/pm6Tk8z``**');
   }
 });
 
@@ -100,7 +106,7 @@ client.on('ready', () => {
       console.log(`ON ${client.guilds.size} Servers '     Script By : i1Suhaib ' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`HAMO BOT`,"http://twitch.tv/S-F")
+client.user.setGame(`https://discord.gg/pm6Tk8z`,"http://twitch.tv/S-F")
 client.user.setStatus("dnd")
 });
   
