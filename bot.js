@@ -142,7 +142,7 @@ client.on("message", function(message) {
 
   if(bannedwords.some(word => message.content.includes(word))) {
     message.delete()
-    message.reply("لا تسب");
+    message.reply("**لا تسب يا توتو**");
   };
 });
   
