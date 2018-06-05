@@ -125,6 +125,26 @@ client.on('ready', () => {
 client.user.setGame(`https://discord.gg/pm6Tk8z`,"http://twitch.tv/S-F")
 client.user.setStatus("dnd")
 });
+
+
+
+client.on("message", function(message) {
+
+  const bannedwords = [
+    "احا",
+    "كسمك",
+    "زبي",
+    "كس",
+    "شرموط",
+    "قحبه"
+
+  ];
+
+  if(bannedwords.some(word => message.content.includes(word))) {
+    message.delete()
+    message.reply("لا تسب");
+  };
+});
   
 
 // THIS  MUST  BE  THIS  WAY
