@@ -42,6 +42,12 @@ client.on('message', msg => {
 });
 
 
+client.on('message', msg => {
+  if (msg.content === 'رابط') {
+    msg.reply('**➤『https://discord.gg/pm6Tk8z』 **');
+  }
+});
+
 
 client.on('message', msg => {
   if (msg.content === '..') {
