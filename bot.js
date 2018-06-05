@@ -98,7 +98,7 @@ client.on('message', msg => {
 });
 
 
-var prefix = "#";
+var prefix = "!";
 client.on("message", message => {
 
             if (message.content.startsWith(prefix + "bc")) {
