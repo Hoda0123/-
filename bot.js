@@ -177,7 +177,7 @@ client.on("message", function(message) {
     .setTitle(`هنا تكتب مثلاً اهلا وسهلاً`)
     .setDescription(`**هنا شكر او شرح ترحيبك**`)//t3gb_(:
     .setColor('GREEN')
-var channel =member.guild.channels.find('name', 'اسم الشات')
+var channel =member.guild.channels.find('name', 'chat')
 if (!channel) return;
 channel.send({embed : embed});
 });
