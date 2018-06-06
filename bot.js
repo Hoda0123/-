@@ -186,7 +186,7 @@ client.on('guildMemberAdd', member => {
     .setDescription(`منور السيرفر يا حلو :blush:` , `welcome to the server :blush:`)
     .addField(' :bust_in_silhouette:  انت رقم',`**[ ${member.guild.memberCount} ]**`,true)
     .setColor('GREEN')
-    .setFooter('==== نــتــمــنــآ لــكــم آســتــمـــتــآع ====', 'https://cdn.discordapp.com/attachments/397818254439219217/399292026782351381/shy.png')
+    .setFooter('==== 𝕎𝔼𝕃ℂ𝕆𝕄𝔼 𝕋𝕆 𝕊𝔼ℝ𝕍𝔼ℝ 𝕄𝔸ℝ𝕂𝔼𝕋 ====', 'https://cdn.discordapp.com/attachments/397818254439219217/399292026782351381/shy.png')
 
 var channel =member.guild.channels.find('name', 'الشات-العام')
 if (!channel) return;
