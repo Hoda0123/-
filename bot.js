@@ -169,6 +169,11 @@ client.on("message", function(message) {
     }
 }); 
 
+client.on("guildMemberAdd", member => {
+  member.createDM().then(function (channel) {
+  return channel.send(` •●𝕎𝔼𝕃ℂ𝕆𝕄𝔼 𝕋𝕆 BLACK MARKET"●• ${member} `) 
+}).catch(console.error)
+})
 
 
 
