@@ -171,7 +171,7 @@ client.on("message", function(message) {
 
 client.on("guildMemberAdd", member => {
   member.createDM().then(function (channel) {
-  return channel.send(` •●𝕎𝔼𝕃ℂ𝕆𝕄𝔼 𝕋𝕆 BLACK MARKET"●• ${member} `) 
+  return channel.send(` •●𝕎𝔼𝕃ℂ𝕆𝕄𝔼 𝕋𝕆 𝕊𝔼ℝ𝕍𝔼ℝ 𝕄𝔸ℝ𝕂𝔼𝕋"●• ${member} `) 
 }).catch(console.error)
 })
 
@@ -208,7 +208,31 @@ if (!channel) return;
 channel.send({embed : embed});
 })
 
-
+   client.on('message', message => {
+ if (message.content.startsWith("ولكم")) {
+                                 var mentionned = message.mentions.users.first();
+             var mentionavatar;
+               if(mentionned){
+                   var mentionavatar = mentionned;
+               } else {
+                   var mentionavatar = message.author;
+                   
+               }
+               let bot;
+               if(message.author.bot) {
+                   bot = 'Bot'
+               } else {
+                   bot = 'User'
+               } 
+  var EsTeKnAN = new Discord.RichEmbed()
+  .setColor('RANDOM')
+  .setThumbnail(`${mentionavatar.avatarURL}`)
+  .addField("***شكرا الانضمامك الينا***" ,mentionavatar.username )
+  .setDescription('***𝕎𝔼𝕃ℂ𝕆𝕄𝔼 𝕋𝕆 𝕊𝔼ℝ𝕍𝔼ℝ 𝕄𝔸ℝ𝕂𝔼𝕋***')
+  .setImage('http://www.imgion.com/images/01/Welcome-buddy.jpg')
+   message.channel.sendEmbed(EsTeKnAN);
+  }
+});
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
